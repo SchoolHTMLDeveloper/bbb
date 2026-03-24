@@ -19,7 +19,160 @@
     <meta property="og:type" content="website">
   </head>
 </html>
+<style>
+  ._checkers_l90pt_12{
+position: fixed !important;
+top: -100% !important;
+left: -100% !important;
+width: 400% !important;
+height: 400% !important;
+background-repeat: repeat !important;
+background-size: 550px !important;
+transform: rotate(15deg) !important;
+background-image: url("/checker.png") !important;
+opacity: 0.09 !important;
+z-index: -1 !important;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
+.mainBody {
+display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  font-family: Nunito, sans-serif !important;
+  background-color: black !important;
+   height: 100% !important;
+}
+checkbox[checked] {
+background:     linear-gradient(to right, red, orange) border-box !important;
+}
+.idInput::placeholder {
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1; /* For FireFox nerds */
+}
 
+.nameInput::placeholder {
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1; /* vibrant colors! did i spell that right? */
+}
+
+            .btext {  
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block; 
+}
+.joinButton {
+    width: 240px !important;
+        border: 4px solid transparent !important;
+        border-radius: 20px;
+      background:
+            linear-gradient(#fff, #fff),
+        linear-gradient(to right, red, orange) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+          margin-top: 15px !important;
+}
+.centerStage {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: fit-content !important; 
+    height: 100% !important;
+}
+
+.errorBar {
+bottom: 0 !important;
+}
+  .txt {
+background-color: transparent;
+color: grey;
+border: 0px solid #000;
+font-size: 10px;
+}
+.button-container {
+  display: flex; 
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  }
+  .inputcontainer {
+                background: linear-gradient(to right, red, orange) !important;
+                display: inline-block;
+                border-radius: 20px;
+                user-select: none;
+                cursor: pointer;
+                justify-items: center;
+            }
+                        .inputcontainer &gt; div {
+                font-size: 23px;
+                text-align: center;
+                font-family:
+                    Source Code Pro,
+                    monospace;
+                color: black;
+                display: grid;
+                padding-inline: 5px;
+                        border: 4px solid transparent !important;
+        border-radius: 20px;
+      background:
+            linear-gradient(#fff, #fff),
+        linear-gradient(to right, red, orange) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+            }
+            
+            #ctrlpanel button {
+    border: 4px solid transparent !important;
+    border-radius: 20px !important;
+    color: black;
+
+    background:
+        linear-gradient(#fff, #fff),
+        linear-gradient(to right, red, orange) !important;
+
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+
+    padding: 6px 14px;
+    font-size: 20px;
+}
+
+.inputcontainer input,
+.inputcontainer select {
+    border-radius: 16px;
+}
+      .status {
+      display: flex; margin-left: 5px; gap: 10px;
+      }
+            #status {
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block; 
+
+      }
+
+  </style>
     <style>
       /* Base Styles */
       * {
